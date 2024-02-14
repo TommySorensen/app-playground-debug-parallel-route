@@ -3,25 +3,24 @@ import { TabGroup } from '#/ui/tab-group';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <Boundary labels={['parallel-routes/@audience/layout.tsx']} size="small">
+    <Boundary labels={['parallel-routes/@views/layout.tsx']} size="small">
       <div className="space-y-8">
         <TabGroup
-          path="/parallel-routes"
+          path="/en/parallel-routes"
           items={[
             {
               text: 'Home',
             },
             {
-              text: 'Demographics',
-              slug: 'demographics',
+              text: 'Impressions',
+              slug: 'impressions',
             },
             {
-              text: 'Subscribers',
-              slug: 'subscribers',
+              text: 'View Duration',
+              slug: 'view-duration',
             },
           ]}
         />
-
         {children}
       </div>
     </Boundary>

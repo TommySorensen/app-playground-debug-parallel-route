@@ -1,4 +1,4 @@
-import { CurrentRoute } from '#/app/parallel-routes/_ui/current-route';
+import { CurrentRoute } from '#/app/[locale]/(parallel-routes)/parallel-routes/_ui/current-route';
 import { Boundary } from '#/ui/boundary';
 import Link from 'next/link';
 
@@ -42,7 +42,7 @@ export default function Default() {
 
         <div className="not-prose flex">
           <Link
-            href="/parallel-routes"
+            href="/en/parallel-routes"
             className="rounded-lg bg-gray-700 px-3 py-1 text-sm font-medium text-gray-100 hover:bg-gray-500 hover:text-white"
           >
             Home

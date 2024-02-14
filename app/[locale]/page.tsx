@@ -1,10 +1,14 @@
 import { demos } from '#/lib/demos';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function Page() {
+  const t = useTranslations('Index');
+
   return (
     <div className="space-y-8">
       <h1 className="text-xl font-medium text-gray-300">Examples</h1>
+      <h1>Translations example: {t('title')}</h1>
 
       <div className="space-y-10 text-white">
         {demos.map((section) => {
